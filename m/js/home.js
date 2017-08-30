@@ -1,3 +1,6 @@
+
+
+
 function openCity(evt, cityName) 
 {
     navigator.vibrate([150]);
@@ -14,16 +17,48 @@ function openCity(evt, cityName)
     evt.currentTarget.className += " active";
     
     
-
-    var myCenter = new google.maps.LatLng(51.508742,-0.120850);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 5};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
+//    var myCenter = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+//    var mapCanvas = document.getElementById("map");
+//    var mapOptions = {center: myCenter, zoom: 5};
+//    var map = new google.maps.Map(mapCanvas, mapOptions);
+//    var marker = new google.maps.Marker({position:myCenter});
+//    marker.setMap(map);
+    
 }
 document.getElementById("defaultOpen").click();
 
 
+
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+
+
+
+function cc()
+{
+    navigator.vibrate([100]);
+}
+
+
+ 
+
+
+
+    
+   
 
 
