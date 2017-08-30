@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/css.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+    
+        <div class="tab" hidden="">
+            <button class="tablinks" onclick="openCity(event, 'P1')" id="defaultOpen">ระดับกลิ่น</button>
+            <button class="tablinks" onclick="openCity(event, 'P2')">ชื่อกลิ่น</button>
+            <button class="tablinks" onclick="openCity(event, 'P3')">เวลา</button>
+            <button class="tablinks" onclick="openCity(event, 'P4')">ตำแหน่ง</button>
+        </div>
+
+        <div id="P1" class="tabcontent">
+                <center><h3>ความรุนแรงของกลิ่น</h3></center>
+                <div class="container">
+                    <div class="square">
+                        <div class="content">
+                            <center>เบาบาง</center>
+                            <img src="img/p1.png" style="width: 100%;height: auto;" class="tablinks" onclick="openCity(event, 'P2')">
+                            
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="content">
+                            <center>ชัดเจน</center>
+                            <img src="img/p2.png" style="width: 100%;height: auto;" class="tablinks" onclick="openCity(event, 'P2')">
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="content">
+                            <center>เข้มข้น</center>
+                            <img src="img/p3.png" style="width: 100%;height: auto;" class="tablinks" onclick="openCity(event, 'P2')">
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="content">
+                            <center>ไม่ไหวแล้ว</center>
+                            <img src="img/p4.png" style="width: 100%;height: auto;" class="tablinks" onclick="openCity(event, 'P2')">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="P2" class="tabcontent">
+            <center><h3>คุณกำลังได้กลิ่นอะไรอยู่</h3></center>
+            <div class="container">
+                <div class="square">
+                    <div class="content">
+                        <center>กลิ่นอาหาร</center>
+                        <img src="img/sss1.png" style="width: 100%;height: auto;"  class="tablinks" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                         <center>กลิ่นหญ้า</center>
+                        <img src="img/sss2.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                          <center>กลิ่นผลไม้</center>
+                        <img src="img/sss3.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                        <center>กลิ่นแก๊ส</center>
+                        <img src="img/sss4.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                        <center>กลิ่นน้ำเน่า</center>
+                        <img src="img/sss5.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                        <center>กลิ่นปลา</center>
+                        <img src="img/sss6.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                        <center>กลิ่นขยะ</center>
+                        <img src="img/sss7.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                        <center>กลิ่นยางไหม้</center>
+                        <img src="img/sss8.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                 <div class="square">
+                    <div class="content">
+                        <center>กลิ่นสารเคมี</center>
+                        <img src="img/sss9.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                        <center>กลิ่นน้ำมัน</center>
+                        <img src="img/sss10.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="content">
+                        <center>เพิ่ม</center>
+                        <img src="img/sss11.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P3')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="P3" class="tabcontent">
+            <center><h3>คุณได้กลิ่นมานานเท่าไร</h3></center>
+            <div class="container">
+                <div class="square">
+                <div class="content">
+                    <center>0 - 15 นาที</center>
+                    <img src="img/t1.png" style="width: 100%;height: auto;"  class="tablinks" onclick="openCity(event, 'P4')">
+                </div>
+            </div>
+            <div class="square">
+                <div class="content">
+                    <center>0 - 30 นาที</center>
+                    <img src="img/t2.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P4')">
+                </div>
+            </div>
+            <div class="square">
+                <div class="content">
+                    <center>0 - 45 นาที</center>
+                   <img src="img/t3.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P4')">
+                </div>
+            </div>
+            <div class="square">
+                <div class="content">
+                    <center>0 - 60 นาที</center>
+                    <img src="img/t4.png" style="width: 100%;height: auto;" onclick="openCity(event, 'P4')">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="P4" class="tabcontent">
+            <div id="map"></div>
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      
+    </script>
+        </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhNBPSSkItAS_uAVy3-HPG76JmRD28yv4&callback=initMap"></script>
+<script type="text/javascript" src="js/home.js"></script>
+</body>
+</html> 

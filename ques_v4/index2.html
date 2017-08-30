@@ -1,0 +1,99 @@
+<html lang = "en">
+   <head>
+      <link rel = "stylesheet" href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <script src="js/base.js" language = "javascript"></script>
+      <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">     
+   </head>
+   
+   <body ng-app = "firstApplication"> 
+       <div ng-cloak>
+        <md-content>
+            <md-tabs md-dynamic-height md-border-bottom>
+      
+                <md-tab label="ความรู้สึก">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">คุณ</h1>
+                            <div layout="row" layout-padding layout-wrap layout-fill style="padding-bottom: 32px;" ng-cloak>
+
+                                <md-whiteframe class="md-whiteframe-1dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                                    <span>ชอบ</span>
+                                </md-whiteframe>
+
+                                <md-whiteframe class="md-whiteframe-2dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                                    <span>เฉยๆ</span>
+                                </md-whiteframe>
+
+                                <md-whiteframe class="md-whiteframe-3dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                                    <span>แย่</span>
+                                </md-whiteframe>
+
+                                <md-whiteframe class="md-whiteframe-4dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                                    <span>ไม่ไหวแล้ว</span>
+                                </md-whiteframe>
+
+                            </div>
+                    </md-content>
+                </md-tab>
+        
+        
+                <md-tab label="กลิ่น">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">กลิ่นที่คุณได้กลิ่นคือกลิ่นของ....?</h1>
+                        <md-slider flex min="0" max="5" ng-model="color.red" aria-label="red" id="red-slider"></md-slider>
+                                
+
+                        <div layout="row" layout-padding layout-wrap layout-fill style="padding-bottom: 32px;" ng-cloak>
+
+                            <md-whiteframe class="md-whiteframe-1dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                                <span>.md-whiteframe-1dp</span>
+                            </md-whiteframe>
+
+                            <md-whiteframe class="md-whiteframe-2dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                                <span>.md-whiteframe-2dp</span>
+                            </md-whiteframe>
+
+                            <md-whiteframe class="md-whiteframe-3dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                                <span>.md-whiteframe-3dp</span>
+                            </md-whiteframe>
+
+                            <md-whiteframe class="md-whiteframe-4dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                                <span>.md-whiteframe-4dp</span>
+                            </md-whiteframe>
+
+                        </div>
+
+
+
+                    </md-content>
+                </md-tab>
+        
+                <md-tab label="เวลา">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">คุณได้กลิ่นนี้มานานแค่ไหนแล้ว....?</h1>
+                
+                    </md-content>
+                </md-tab>
+                
+                <md-tab label="ตำแหน่ง">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">คุณอยู่ที่นี่ใช่หรือไม่....?</h1>
+                
+                    </md-content>
+                </md-tab>
+                
+                <md-tab label="----">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">ขอบคุณครับ</h1>
+                
+                    </md-content>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+       </div>
+   </body>
+</html>

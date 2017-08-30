@@ -1,0 +1,165 @@
+<!doctype html>
+<!--##################################################
+Mr.Ukrit Fongsomboon
+E-mail:Kobori4268@gmail.com
+11-06-2016
+###################################################-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    </head>
+    <body>
+        <a class="phe">EZsens </a><a class="pht">แบบสอบถาม</a>
+        <form method="post" action="send.php" enctype="multipart/form-data">
+           <fieldset>
+                <legend><a>กรุณาเลือกกลิ่น</a></legend>
+                   <center><!--<input type="serch" name="name"> -->
+                       <select name="name" class="smale">
+                            <option value="สารเคมี">สารเคมี</option>
+                            <option value="อาหาร">อาหาร</option>
+                            <option value="มลพิษ">มลพิษ</option>
+                            <option value="มลลพิษ">ควันไฟ</option>
+                            <option value="ไม่มีกลิ่น">ไม่มีกลิ่น</option>
+                        </select>
+                   </center>
+                   <center>
+                        <input type="text" class="tex smale" name="detel" placeholder="ใส่รายละเอียดกลิ่น">
+                   </center>
+            </fieldset>
+            
+             <fieldset>
+                <legend><a>เลือกระดับกลิ่น</a></legend>
+                  <center>
+                    <label>
+                        <input type="radio" name="level" value="1" />
+                        <img src="img/y3.png" width="60px" height="60px">
+                     </label>
+                     <label>
+                        <input type="radio" name="level" value="2"/>
+                        <img src="img/y2.png" width="60px" height="60px">
+                     </label>
+                     <label>
+                         <input type="radio" name="level" value="3" />
+                         <img src="img/y.png" width="60px" height="60px">
+                     </label>
+                  </center>
+                 
+            </fieldset>
+            <fieldset>
+                <legend><a>ลักษณะลม</a></legend>
+                <center><select name="compass" class="smale">
+                        <option value="ไม่มีลม">ไม่มีลม</option>
+                        <option value="จากทิศเหนือ">จากทิศเหนือ</option>
+                        <option value="จากทิศใต้">จากทิศใต้</option>
+                        <option value="จากทิศตะวันออก">จากทิศตะวันออก</option>
+                        <option value="จากทิศตะวันตก">จากทิศตะวันตก</option>
+                        <option value="จากทิศตะวันออก/เหนือ">จากทิศตะวันออก/เหนือ</option>
+                        <option value="จากทิศตะวันออก/ใต้">จากทิศตะวันออก/ใต้</option>
+                        <option value="จากทิศตะวันตก/เหนือ">จากทิศตะวันตก/เหนือ</option>
+                        <option value="จากทิศตะวันตก/ใต้">จากทิศตะวันตก/ใต้</option>
+                        
+                    </select></center>
+            </fieldset>
+            <!----------------------------------------------------------->
+           <!-- <fieldset>
+                <legend><a>สภาพอากาศ</a></legend>
+                <center>
+                    <select name="sesson">
+                        <option value="ฝนตก">ฝนตก</option>
+                        <option value="ฝนไม่ตก">ฝนไม่ตก</option>
+                    </select>
+                         <input type="text" class="tex" name="detelsesson" placeholder="ใส่รายละเอียด">
+                </center>
+            </fieldset> -->
+              <fieldset>
+                <legend><a>อุณหภูมิ</a></legend>
+                <center>
+                    <input type="number" name="tem" class="tex smale" placeholder="ใส่อุณหภูมิ">
+                </center>
+            </fieldset>
+            <!------------------------------------------------------->
+            <fieldset>
+                <legend><a>เลือกstation</a></legend>
+                    <center>
+                    <select name="station" class="smale">
+                        <option value="1">โรงงาน</option>
+                        <option value="2">ร้านค้า</option>
+                        <option value="3">บ้านเลี้ยงหมา</option>
+                        <option value="4">อื่น ๆ</option>
+                    </select>
+                        <br>
+                        <input type="text" class="tex smale" name="dest" placeholder="ใส่รายละเอียด">
+                    </center>
+            </fieldset>
+            <!-------------------------------------------------------->
+            <fieldset>
+                <legend><a>รูปภาพ</a></legend>
+                <input type="file" name="filUpload" class="up">
+            </fieldset>
+            
+            <!-------------------------------------------------------->
+            <fieldset>
+                <legend><a>กรุณาใส่ User</a></legend>
+                <center>
+                    <label>
+                        <input type="radio"  name="user" value="นัวเนีย">
+                        <img src="img/nn.png" width="60px" height="60px">
+                    </label>
+                     <label>
+                        <input type="radio"  name="user" value="จิว">
+                        <img src="img/jiew.png" width="60px" height="60px">
+                    </label>
+                     <label>
+                        <input type="radio"  name="user" value = "ฟ้า">
+                        <img src="img/pf.png" width="60px" height="60px">
+                    </label>
+                    <label>
+                        <input type="radio"  name="user" value = "ปอเช่">
+                        <img src="img/pch.png" width="60px" height="60px">
+                    </label>
+                  </center>  
+                <center>
+                    <label>
+                        <input type="radio"  name="user" value= "เจมส์">
+                        <img src="img/jame.png" width="60px" height="60px">
+                    </label>
+                     <label>
+                        <input type="radio"  name="user" value = "นัท">
+                        <img src="img/nut.png" width="60px" height="60px">
+                    </label>
+                     <label>
+                        <input type="radio"  name="user" value = "ทัศนัย">
+                        <img src="img/tcn.png" width="60px" height="60px">
+                    </label>
+                   <label>
+                        <input type="radio"  name="user" value = "ว่าน">
+                        <img src="img/wan.png" width="60px" height="60px">
+                    </label>
+                  </center> 
+                <center>
+                    <label>
+                        <input type="radio"  name="user" value = "พี่โย">
+                        <img src="img/pyo.png" width="60px" height="60px">
+                    </label>
+                     
+                    <label>
+                        <input type="radio"  name="user" value = "อ.แคท">
+                        <img src="img/ajc.png" width="60px" height="60px">
+                    </label>
+                  </center>  
+            </fieldset>
+            
+            <center>
+                <input type="submit" name="กดปุ่ม" class="btn-subbmit" value="ส่งข้อมูล">
+                <button onclick="location.href='recive.php'" class="btn-subbmit" >ดูข้อมูล</button>
+            </center> 
+           
+        </form>
+    </body>
+</html>
