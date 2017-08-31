@@ -5,7 +5,24 @@ function openCity(evt, cityName)
     var r1 = $("input[name='a']:checked").val();
     var r2 = $("input[name='b']:checked").val();
     var r3 = $("input[name='c']:checked").val();
-    alert(r1);alert(r2);alert(r3);
+    
+    $(document).ready(function(){   
+        $("#ss1").text("ระดับกลิ่น  : "  + r1);
+        $("#ss2").text("ชนิดของกลิ่น  : "  + r2);
+        $("#ss3").text("ระยะเวลาของกลิ่น  : "  + r3);
+    });
+    if(cityName == 'P2')
+    {
+         $("#pr").val("33");
+    }
+    if(cityName == 'P3')
+    {
+         $("#pr").val("66");
+    }
+    if(cityName == 'P4')
+    {
+         $("#pr").val("100");
+    }
     // alert(cityNames);
     navigator.vibrate([100]);
     setTimeout(function()

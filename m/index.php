@@ -19,7 +19,7 @@
         </script> -->
     </head>
     <body >
-    <progress id="pr"value="25" max="100" style="width: 100%;margin: 0px;"></progress>
+    <progress id="pr" value="1" max="100" style="width: 100%;margin: 0px;"></progress>
         <?php  
            
             $la = $_GET['lat'];
@@ -49,7 +49,7 @@
             <button class="tablinks" onclick="openCity(event, 'P3')">เวลา</button>
             <button class="tablinks" onclick="openCity(event, 'P4')">ตำแหน่ง</button>
     </div>
-   <!--  <form> -->
+    <form>
         <div id="P1" class="tabcontent">
 
 <!-- <input type="radio" name="radio" value="first"/> 1 <br/>
@@ -196,7 +196,7 @@ $(document).ready(function () {
             <button style="background-color: red;width:  48.5%;height: 50px;">ยกเลิก</button>
         </div>
        
-    <!--  </form> -->
+     </form>
         <script type="text/javascript" src="js/home.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3Ej0xO6_lSSlOXG41ozVJi-POEaLWS3o&callback=initMap"></script>
 <!--
