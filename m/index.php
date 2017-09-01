@@ -103,6 +103,16 @@ $(document).ready(function () {
                             <input id="pp1"  type="radio"    name="b"  value="กลิ่นอาหาร"  checked="checked"onclick="openCity(event, 'P3')"/>
                             <label class="drinkcard-cc pp1"  for="pp1"></label>
                         </div>
+                         <div class="cc-selector">
+                            <center>กลิ่นยางไหม้</center>
+                            <input id="pp8"  type="radio"    name="b"  value="กลิ่นยางไหม้" onclick="openCity(event, 'P3')"/>
+                            <label class="drinkcard-cc pp8"  for="pp8"></label>
+                        </div>
+                         <div class="cc-selector">
+                             <center>กลิ่นสารเคมี</center>
+                            <input id="pp9"  type="radio"    name="b"  value="กลิ่นสารเคมี" onclick="openCity(event, 'P3')"/>
+                            <label class="drinkcard-cc pp9"  for="pp9"></label>
+                        </div>
                         <div class="cc-selector">
                             <center>กลิ่นหญ้า</center>
                             <input id="pp2"  type="radio"    name="b"  value="กลิ่นหญ้า" onclick="openCity(event, 'P3')"/>
@@ -132,16 +142,6 @@ $(document).ready(function () {
                             <center>กลิ่นขยะ</center>
                             <input id="pp7"  type="radio"    name="b"  value="กลิ่นขยะ" onclick="openCity(event, 'P3')"/>
                             <label class="drinkcard-cc pp7"  for="pp7"></label>
-                        </div>
-                        <div class="cc-selector">
-                            <center>กลิ่นยางไหม้</center>
-                            <input id="pp8"  type="radio"    name="b"  value="กลิ่นยางไหม้" onclick="openCity(event, 'P3')"/>
-                            <label class="drinkcard-cc pp8"  for="pp8"></label>
-                        </div>
-                         <div class="cc-selector">
-                             <center>กลิ่นสารเคมี</center>
-                            <input id="pp9"  type="radio"    name="b"  value="กลิ่นสารเคมี" onclick="openCity(event, 'P3')"/>
-                            <label class="drinkcard-cc pp9"  for="pp9"></label>
                         </div>
                          <div class="cc-selector">
                              <center>กลิ่นน้ำมัน</center>
